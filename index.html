@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+        <div class="buttons">
+            <button onclick="changeBackgroundColor('red')">Background Merah</button>
+            <button onclick="changeBackgroundColor('blue')">Background Biru</button>
+            <button onclick="changeBackgroundColor('white')">Background Putih</button>
+        </div>
+        <hr>
+        <div class="buttons">
+            <button onclick="openLink('https://www.google.com')">Buka Google</button>
+            <button onclick="openLink('https://www.youtube.com')">Buka Youtube</button>
+        </div>
+        <hr>
+        <div class="todo-form">
+            <input type="text" id="todo-input" placeholder="Enter Todo...">
+            <input type="date" id="date-input">
+            <button onclick="addTodo()">Submit</button>
+        </div>
+        <hr>
+        <div class="todo-list">
+            <table id="todo-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Todo</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="todo-body">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
